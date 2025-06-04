@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gongapa Andina - El Tesoro Azul de los Andes Peruanos</title>
+    <title>Andean Berry - El Tesoro Azul de los Andes Peruanos</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="gongapa-favicon.png" type="image/png"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="andean-berry-favicon.png" type="image/png"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
         <nav class="container">
             <a href="index.html" class="logo-link">
-                <img src="gongapa-logo.png" alt="Logo Gongapa Andina" id="logo-empresa"> </a>
+                <img src="andean-berry-logo.png" alt="Logo Andean Berry" id="logo-empresa"> </a>
             <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu-main">
                 <span class="menu-icon-bar"></span>
                 <span class="menu-icon-bar"></span>
@@ -19,22 +19,30 @@
             </button>
             <ul class="nav-menu" id="nav-menu-main">
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#descubre">Descubre AndeanBerry</a></li>
+                <li><a href="#descubre">Descubre Andean Berry</a></li>
                 <li><a href="#beneficios">Beneficios</a></li>
-                <li><a href="#origen">Origen y Sostenibilidad</a></li>
+                <li><a href="#tienda">Tienda</a></li>
+                <li><a href="#origen">Origen</a></li>
                 <li><a href="#nosotros">Nuestra Historia</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
+            <div class="header-cart-icon">
+                <a href="#carrito" aria-label="Carrito de compras"> {/* En el futuro, esto podría enlazar a una página de carrito */}
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-item-count">0</span>
+                </a>
+            </div>
         </nav>
     </header>
 
     <main>
         <section id="inicio" class="hero-section">
             <video autoplay loop muted playsinline class="hero-video">
-                <source src="gongapa-video-bg.mp4" type="video/mp4"> Tu navegador no soporta el elemento de video.
+                <source src="tu-video-de-fondo.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
             </video>
             <div class="hero-content container">
-                <h1>Gongapa Andina</h1>
+                <h1>Andean Berry</h1>
                 <p>El Tesoro Azul de los Andes Peruanos, directamente a tu mesa.</p>
                 <a href="#descubre" class="btn btn-primary">Conoce la Maravilla Andina</a>
             </div>
@@ -42,14 +50,15 @@
 
         <section id="descubre" class="content-section">
             <div class="container">
-                <h2>Descubre la Gongapa</h2>
+                <h2>Descubre Andean Berry (Gongapa)</h2>
                 <div class="dual-layout">
                     <div>
-                        <img src="gongapa-fruit-closeup.png" alt="Fruta Gongapa en primer plano" class="img-fluid rounded"> </div>
+                        <img src="gongapa-fruit-closeup.jpg" alt="Fruta Gongapa en primer plano" class="img-fluid rounded">
+                    </div>
                     <div>
                         <h3>Un Regalo de los Andes</h3>
-                        <p>La Gongapa es una fruta silvestre excepcional, prima hermana del arándano azul, que crece en las prístinas alturas de los Andes peruanos. Su sabor único, una mezcla de dulzor y acidez equilibrada, y su intenso color azul-morado la convierten en una joya de la naturaleza.</p>
-                        <p>Durante generaciones, las comunidades andinas han valorado la Gongapa no solo por su delicioso sabor, sino también por sus propiedades nutritivas. En Gongapa Andina, trabajamos para llevar esta maravilla ancestral a más personas, respetando su origen y promoviendo su cultivo sostenible.</p>
+                        <p>Andean Berry, conocida localmente como Gongapa, es una fruta silvestre excepcional, prima hermana del arándano azul, que crece en las prístinas alturas de los Andes peruanos. Su sabor único, una mezcla de dulzor y acidez equilibrada, y su intenso color azul-morado la convierten en una joya de la naturaleza.</p>
+                        <p>Durante generaciones, las comunidades andinas han valorado la Gongapa no solo por su delicioso sabor, sino también por sus propiedades nutritivas. En Andean Berry, trabajamos para llevar esta maravilla ancestral a más personas, respetando su origen y promoviendo su cultivo sostenible.</p>
                     </div>
                 </div>
             </div>
@@ -57,30 +66,33 @@
 
         <section id="beneficios" class="content-section bg-light">
             <div class="container">
-                <h2>Beneficios y Propiedades de la Gongapa</h2>
-                <p class="section-intro">La Gongapa no es solo deliciosa, ¡también está llena de vitalidad!</p>
+                <h2>Beneficios y Propiedades de Andean Berry</h2>
+                <p class="section-intro">Nuestra Gongapa no es solo deliciosa, ¡está llena de vitalidad!</p>
                 <div class="feature-cards">
                     <div class="card">
+                        <img src="beneficio-antioxidantes.jpg" alt="Antioxidantes Naturales" class="card-img-top">
                         <h3>Rica en Antioxidantes</h3>
-                        <p class="card-short-desc">Al igual que los arándanos, la Gongapa es una fuente poderosa de antioxidantes.</p>
+                        <p class="card-short-desc">Al igual que los arándanos, Andean Berry (Gongapa) es una fuente poderosa de antioxidantes.</p>
                         <div class="card-full-desc" style="display: none;">
-                            <p>Los antioxidantes presentes en la Gongapa ayudan a combatir los radicales libres en el cuerpo, protegiendo tus células del daño oxidativo. Esto puede contribuir a prevenir el envejecimiento prematuro y diversas enfermedades.</p>
+                            <p>Los antioxidantes presentes en Andean Berry ayudan a combatir los radicales libres en el cuerpo, protegiendo tus células del daño oxidativo. Esto puede contribuir a prevenir el envejecimiento prematuro y diversas enfermedades crónicas, promoviendo una salud celular óptima.</p>
                         </div>
                         <button class="btn btn-secondary read-more-btn">Leer Más</button>
                     </div>
                     <div class="card">
-                        <h3>Fuente de Vitaminas</h3>
-                        <p class="card-short-desc">Aporta vitaminas esenciales para tu bienestar diario y energía.</p>
+                        <img src="beneficio-vitaminas.jpg" alt="Vitaminas y Minerales" class="card-img-top">
+                        <h3>Fuente de Vitaminas y Minerales</h3>
+                        <p class="card-short-desc">Aporta vitaminas y minerales esenciales para tu bienestar diario y energía.</p>
                         <div class="card-full-desc" style="display: none;">
-                            <p>La Gongapa contiene vitaminas importantes como la Vitamina C, que refuerza el sistema inmunológico, y Vitamina K, esencial para la salud ósea. Su perfil nutricional la convierte en un excelente complemento para una dieta equilibrada.</p>
+                            <p>Andean Berry (Gongapa) contiene vitaminas importantes como la Vitamina C, que refuerza el sistema inmunológico y mejora la absorción de hierro, y Vitamina K, esencial para la salud ósea y la coagulación. También aporta fibra y minerales que complementan una dieta equilibrada.</p>
                         </div>
                         <button class="btn btn-secondary read-more-btn">Leer Más</button>
                     </div>
                     <div class="card">
-                        <h3>Sabor Excepcional</h3>
-                        <p class="card-short-desc">Un perfil de sabor único que deleitará tu paladar de formas inesperadas.</p>
+                        <img src="beneficio-sabor.jpg" alt="Sabor Único Andino" class="card-img-top">
+                        <h3>Sabor Andino Excepcional</h3>
+                        <p class="card-short-desc">Un perfil de sabor único que deleitará tu paladar de formas inesperadas y auténticas.</p>
                         <div class="card-full-desc" style="display: none;">
-                            <p>La Gongapa ofrece una experiencia gustativa distintiva, con notas que recuerdan al arándano pero con un toque particular de los Andes. Es perfecta para consumir fresca, en postres, batidos, mermeladas o como un snack saludable y exótico.</p>
+                            <p>Andean Berry (Gongapa) ofrece una experiencia gustativa distintiva, con notas que recuerdan al arándano pero con un toque terroso y particular de los Andes. Es perfecta para consumir fresca, en postres gourmet, batidos energizantes, mermeladas artesanales o como un snack saludable y exótico.</p>
                         </div>
                         <button class="btn btn-secondary read-more-btn">Leer Más</button>
                     </div>
@@ -88,26 +100,56 @@
             </div>
         </section>
 
-        <section id="origen" class="content-section">
+        <section id="tienda" class="content-section">
+            <div class="container">
+                <h2>Nuestra Tienda Andean Berry</h2>
+                <p class="section-intro">Descubre la frescura y el sabor auténtico de los Andes en cada producto.</p>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="gongapa-fresca.jpg" alt="Andean Berry (Gongapa) Fresca" class="product-image">
+                        <h3>Andean Berry Fresca (500g)</h3>
+                        <p class="product-price">S/ 15.00</p>
+                        <p class="product-description">Deliciosas bayas de Gongapa recién cosechadas, listas para disfrutar.</p>
+                        <button class="btn btn-primary add-to-cart-btn">Añadir al Carrito</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="mermelada-gongapa.jpg" alt="Mermelada de Andean Berry (Gongapa)" class="product-image">
+                        <h3>Mermelada de Andean Berry (250g)</h3>
+                        <p class="product-price">S/ 12.00</p>
+                        <p class="product-description">Mermelada artesanal hecha con Gongapas seleccionadas, perfecta para tus desayunos.</p>
+                        <button class="btn btn-primary add-to-cart-btn">Añadir al Carrito</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="jugo-gongapa.jpg" alt="Jugo de Andean Berry (Gongapa)" class="product-image">
+                        <h3>Jugo Natural de Andean Berry (1L)</h3>
+                        <p class="product-price">S/ 18.00</p>
+                        <p class="product-description">Refrescante y nutritivo jugo 100% natural de Gongapa, sin aditivos.</p>
+                        <button class="btn btn-primary add-to-cart-btn">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="origen" class="content-section bg-light">
             <div class="container">
                 <h2>Origen Andino y Sostenibilidad</h2>
                 <div class="dual-layout">
                     <div>
                         <h3>Cultivada con Respeto</h3>
-                        <p>Nuestra Gongapa crece en armonía con el ecosistema altoandino de Perú. Trabajamos de la mano con agricultores locales, promoviendo prácticas agrícolas sostenibles que conservan la biodiversidad y aseguran la calidad de cada fruto.</p>
-                        <p>Creemos en el comercio justo y en el desarrollo de las comunidades que, con su sabiduría ancestral, cuidan de esta valiosa fruta. Al elegir Gongapa Andina, apoyas un modelo de producción responsable y consciente.</p>
+                        <p>Nuestra Andean Berry (Gongapa) crece en armonía con el ecosistema altoandino de Perú. Trabajamos de la mano con agricultores locales, promoviendo prácticas agrícolas sostenibles que conservan la biodiversidad y aseguran la calidad de cada fruto.</p>
+                        <p>Creemos en el comercio justo y en el desarrollo de las comunidades que, con su sabiduría ancestral, cuidan de esta valiosa fruta. Al elegir Andean Berry, apoyas un modelo de producción responsable y consciente.</p>
                     </div>
                     <div>
-                         <img src="gongapa-andean-harvest.png" alt="Cosecha de Gongapa en los Andes" class="img-fluid rounded">
+                         <img src="andean-berry-harvest.jpg" alt="Cosecha de Andean Berry (Gongapa) en los Andes" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
         </section>
 
-         <section id="nosotros" class="content-section bg-light">
+         <section id="nosotros" class="content-section">
             <div class="container">
-                <h2>Nuestra Historia: Pasión por la Gongapa</h2>
-                <p class="section-intro">[Aquí puedes contar brevemente la historia de tu emprendimiento con la Gongapa. Por ejemplo: cómo descubriste la fruta, tu motivación, y la misión de "Gongapa Andina".]</p>
+                <h2>Nuestra Historia: Pasión por Andean Berry</h2>
+                <p class="section-intro">[Aquí puedes contar brevemente la historia de tu emprendimiento con Andean Berry (Gongapa). Por ejemplo: cómo descubriste la fruta, tu motivación, y la misión de la marca.]</p>
                 <div class="text-center">
                     <p>Somos un equipo apasionado por los tesoros naturales del Perú y comprometidos con llevar lo mejor de los Andes al mundo, de una manera justa y sostenible.</p>
                 </div>
@@ -117,32 +159,33 @@
         <section id="contacto" class="content-section bg-dark text-light">
             <div class="container">
                 <h2>Contáctanos y Descubre Más</h2>
-                <p class="section-intro">¿Interesado en la Gongapa? ¿Tienes preguntas? ¡Nos encantaría escucharte!</p>
+                <p class="section-intro">¿Interesado en Andean Berry? ¿Tienes preguntas? ¡Nos encantaría escucharte!</p>
                 <div class="contact-main-area">
                     <div class="contact-form-container">
-                        <form class="contact-form" action="TU_NUEVO_ENDPOINT_DE_FORMSPREE_PARA_GONGAPA" method="POST">
+                        <form class="contact-form" action="TU_NUEVO_ENDPOINT_DE_FORMSPREE_PARA_ANDEAN_BERRY" method="POST">
                             <div class="form-group">
-                                <label for="contact-nombre-gongapa">Nombre:</label>
-                                <input type="text" id="contact-nombre-gongapa" name="nombre" placeholder="Tu Nombre Completo" required>
+                                <label for="contact-nombre-andeanberry">Nombre:</label>
+                                <input type="text" id="contact-nombre-andeanberry" name="nombre" placeholder="Tu Nombre Completo" required>
                             </div>
                             <div class="form-group">
-                                <label for="contact-email-gongapa">Correo Electrónico:</label>
-                                <input type="email" id="contact-email-gongapa" name="_replyto" placeholder="Tu Correo Electrónico" required>
+                                <label for="contact-email-andeanberry">Correo Electrónico:</label>
+                                <input type="email" id="contact-email-andeanberry" name="_replyto" placeholder="Tu Correo Electrónico" required>
                             </div>
                             <div class="form-group">
-                                <label for="contact-asunto-gongapa">Asunto (Opcional):</label>
-                                <input type="text" id="contact-asunto-gongapa" name="_subject" placeholder="Asunto del Mensaje">
+                                <label for="contact-asunto-andeanberry">Asunto (Opcional):</label>
+                                <input type="text" id="contact-asunto-andeanberry" name="_subject" placeholder="Asunto del Mensaje">
                             </div>
                             <div class="form-group">
-                                <label for="contact-mensaje-gongapa">Mensaje:</label>
-                                <textarea id="contact-mensaje-gongapa" name="mensaje" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                                <label for="contact-mensaje-andeanberry">Mensaje:</label>
+                                <textarea id="contact-mensaje-andeanberry" name="mensaje" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
                         </form>
                     </div>
                     <div class="contact-info-map-container">
                         <div class="contact-details">
-                            <h3>Gongapa Andina / Contacto</h3> <p><strong>Dirección:</strong> Jr. Independencia 1311, Huánuco, Perú</p>
+                            <h3>Andean Berry / Contacto</h3>
+                            <p><strong>Dirección:</strong> Jr. Independencia 1311, Huánuco, Perú</p>
                             <p><strong>Teléfono:</strong> <a href="tel:+51964604628">+51 964 604 628</a></p>
                             <p><strong>Email:</strong> <a href="mailto:Francissc97@gmail.com">Francissc97@gmail.com</a></p>
                         </div>
@@ -155,16 +198,17 @@
         </section>
     </main>
 
-   <footer>
+    <footer>
         <div class="container">
             <div class="social-links">
                 <a href="https://web.facebook.com/profile.php?id=61576767164844" target="_blank" aria-label="Facebook de Andean Berry"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com/andeanberry/" target="_blank" aria-label="Instagram de Andean Berry"><i class="fab fa-instagram"></i></a>
-                </div>
-            <p>© <span id="year"></span> Andean Berry. Todos los derechos reservados. Perú.</p> </div>
+            </div>
+            <p>© <span id="year"></span> Andean Berry. Todos los derechos reservados. Perú.</p>
+        </div>
     </footer>
 
-    <a href="https://wa.me/51964604628?text=Hola%2C%20estoy%20interesado%20en%20la%20fruta%20Gongapa." class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+    <a href="https://wa.me/51964604628?text=Hola%2C%20estoy%20interesado%20en%20Andean%20Berry%20(Gongapa)." class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
