@@ -6,29 +6,25 @@
     --dark-color: #2c3e50;    /* Azul oscuro/Gris para fondos oscuros */
     --text-color: #333333;
     --light-text-color: #FCFCFC;
-    --font-family: 'Roboto', sans-serif; /* Sugerencia de fuente, puedes cambiarla. Asegúrate de importarla si usas Google Fonts */
+    --font-family: 'Roboto', sans-serif;
     --header-height: 70px;
 }
-
-/* Importar fuente Roboto de Google Fonts (opcional, si la quieres usar) */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-
-
 html { scroll-behavior: smooth; }
 body { font-family: var(--font-family); margin: 0; padding: 0; line-height: 1.7; color: var(--text-color); background-color: #fff; font-size: 16px; }
 .container { width: 90%; max-width: 1100px; margin: auto; overflow: hidden; padding: 0 20px; }
-h1, h2, h3 { margin-bottom: 1rem; font-weight: 700; /* Más peso para títulos */ line-height: 1.3; color: var(--primary-color); /* Títulos con color primario */}
-h1 { font-size: 3rem; text-align: center; } /* Título principal más grande y centrado */
+h1, h2, h3 { margin-bottom: 1rem; font-weight: 700; line-height: 1.3; color: var(--primary-color); }
+h1 { font-size: 3rem; text-align: center; }
 h2 { font-size: 2.4rem; text-align: center; margin-bottom: 2.5rem; }
-h3 { font-size: 1.6rem; color: var(--secondary-color); /* Subtítulos con color secundario */ }
-p { margin-bottom: 1.2rem; color: #555; /* Texto de párrafo un poco más claro */ }
+h3 { font-size: 1.6rem; color: var(--secondary-color); }
+p { margin-bottom: 1.2rem; color: #555; }
 a { color: var(--primary-color); text-decoration: none; transition: color 0.3s ease; }
 a:hover { color: var(--secondary-color); }
 ul { list-style: none; padding: 0; }
-img.rounded { border-radius: 10px; /* Bordes más redondeados para imágenes */ }
+img.rounded { border-radius: 10px; }
 img.img-fluid { max-width: 100%; height: auto; display: block; }
-label { display: block; margin-bottom: 0.5rem; font-weight: 500; color: var(--text-color); /* Asegurar color en fondos claros */}
-.content-section.bg-dark label { color: var(--light-text-color); } /* Labels en fondo oscuro */
+label { display: block; margin-bottom: 0.5rem; font-weight: 500; color: var(--text-color); }
+.content-section.bg-dark label { color: var(--light-text-color); }
 
 /* Header y Navegación */
 header { background-color: rgba(255, 255, 255, 0.99); padding: 0; box-shadow: 0 2px 10px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 1000; height: var(--header-height); }
@@ -44,16 +40,23 @@ header nav ul.nav-menu li a:hover, header nav ul.nav-menu li a.active-link { col
 .menu-toggle.active .menu-icon-bar:nth-child(2) { opacity: 0; }
 .menu-toggle.active .menu-icon-bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 
+/* Icono de Carrito en el Header */
+.header-cart-icon { position: relative; margin-left: 20px; }
+.header-cart-icon a { color: var(--text-color); font-size: 1.5rem; position: relative; display: inline-block; padding: 5px; }
+.header-cart-icon a:hover { color: var(--primary-color); }
+.cart-item-count { position: absolute; top: -5px; right: -10px; background-color: red; color: white; border-radius: 50%; padding: 2px 6px; font-size: 0.75rem; font-weight: bold; line-height: 1; }
+
+
 /* Botones */
-.btn { display: inline-block; padding: 0.9rem 2.2rem; border-radius: 25px; /* Botones más redondeados (píldora) */ text-decoration: none; font-weight: 500; cursor: pointer; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; border: none; text-align: center; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.btn { display: inline-block; padding: 0.9rem 2.2rem; border-radius: 25px; text-decoration: none; font-weight: 500; cursor: pointer; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; border: none; text-align: center; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px; }
 .btn:hover { transform: translateY(-3px); box-shadow: 0 5px 12px rgba(0,0,0,0.2); }
 .btn-primary { background-color: var(--primary-color); color: #fff; }
-.btn-primary:hover { background-color: #4A00E0; } /* Un morado más intenso al hover */
+.btn-primary:hover { background-color: #4A00E0; }
 .btn-secondary { background-color: var(--secondary-color); color: #fff; margin-top: 10px; }
-.btn-secondary:hover { background-color: #58813E; } /* Un verde más oscuro al hover */
+.btn-secondary:hover { background-color: #58813E; }
 
 /* Hero Section */
-.hero-section { position: relative; height: 95vh; /* Más alto */ min-height: 600px; display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; background-image: linear-gradient(rgba(40, 10, 70, 0.6), rgba(40, 10, 70, 0.6)), url('gongapa-hero-bg.jpg'); /* Tinte morado para el fondo, verifica extensión real */ background-size: cover; background-position: center center; }
+.hero-section { position: relative; height: 95vh; min-height: 600px; display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; background-image: linear-gradient(rgba(40, 10, 70, 0.6), rgba(40, 10, 70, 0.6)), url('andean-berry-hero-bg.jpg'); background-size: cover; background-position: center center; }
 .hero-video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: 0; transform: translateX(-50%) translateY(-50%); object-fit: cover; }
 .hero-content { position: relative; z-index: 1; background-color: rgba(0, 0, 0, 0.3); padding: 40px 50px; border-radius: 15px; max-width: 800px; }
 .hero-content h1 { font-size: 3.8rem; margin-bottom: 1rem; color: #fff; text-shadow: 2px 2px 5px rgba(0,0,0,0.7); }
@@ -64,19 +67,21 @@ header nav ul.nav-menu li a:hover, header nav ul.nav-menu li a.active-link { col
 .content-section.bg-light { background-color: var(--light-color); }
 .content-section.bg-dark { background-color: var(--dark-color); }
 .content-section.bg-dark h2, .content-section.bg-dark h3, .content-section.bg-dark p, .content-section.bg-dark .contact-details p, .content-section.bg-dark .section-intro, .content-section.bg-dark label { color: var(--light-text-color); }
-.content-section.bg-dark h2, .content-section.bg-dark h3 { color: #e0e0e0; /* Ajuste para títulos en fondo oscuro */}
+.content-section.bg-dark h2, .content-section.bg-dark h3 { color: #e0e0e0; }
 .content-section.bg-dark a:not(.btn) { color: #b0cfff; }
 .content-section.bg-dark a:not(.btn):hover { color: #d8e7ff; }
 .section-intro { text-align: center; font-size: 1.2rem; color: #666; max-width: 800px; margin: 0 auto 3rem auto; line-height: 1.8; }
+.content-section.bg-dark .section-intro { color: #ccc; }
+
 
 /* Layout Dual */
 .dual-layout { display: flex; gap: 50px; align-items: center; }
 .dual-layout > div { flex: 1; }
 .dual-layout img { margin-bottom: 1rem; box-shadow: 0 6px 20px rgba(0,0,0,0.1); border-radius: 10px; }
 
-/* Tarjetas */
+/* Tarjetas de Beneficios */
 .feature-cards { display: flex; gap: 30px; justify-content: center; margin-top: 3rem; flex-wrap: wrap; }
-.card { background-color: #fff; padding: 35px; border-radius: 15px; box-shadow: 0 7px 25px rgba(74,0,224,0.08); /* Sombra con tinte primario */ flex: 1; min-width: 300px; max-width: 370px; text-align: left; display: flex; flex-direction: column; transition: transform 0.3s ease, box-shadow 0.3s ease; border: 1px solid #eee; }
+.card { background-color: #fff; padding: 35px; border-radius: 15px; box-shadow: 0 7px 25px rgba(74,0,224,0.08); flex: 1; min-width: 300px; max-width: 370px; text-align: left; display: flex; flex-direction: column; transition: transform 0.3s ease, box-shadow 0.3s ease; border: 1px solid #eee; }
 .card:hover { transform: translateY(-8px); box-shadow: 0 12px 30px rgba(74,0,224,0.15); }
 .card img.card-img-top { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1.5rem; }
 .card h3 { margin-top: 0; margin-bottom: 1rem; text-align: center; font-size: 1.5rem; color: var(--primary-color); }
@@ -84,12 +89,20 @@ header nav ul.nav-menu li a:hover, header nav ul.nav-menu li a.active-link { col
 .card-full-desc ul { list-style: disc; padding-left: 20px; margin-top: 0.5rem; }
 .card-full-desc ul li { margin-bottom: 0.4rem; }
 
-/* Sección de Impacto (Origen y Sostenibilidad) */
-#origen ul li, #impacto ul li { /* Aplicar a ambas si tienen listas similares */
-    background-color: var(--light-color);
-    padding: 20px 25px; margin-bottom: 15px; border-left: 7px solid var(--secondary-color);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.06); font-size: 1.05rem; border-radius: 0 8px 8px 0;
-}
+/* Sección de Tienda */
+#tienda h2 { margin-bottom: 1.5rem; }
+.product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 2rem; }
+.product-card { background-color: #fff; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.07); padding: 20px; text-align: center; display: flex; flex-direction: column; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.product-card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+.product-image { width: 100%; max-height: 220px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem; }
+.product-card h3 { font-size: 1.3rem; color: var(--primary-color); margin-bottom: 0.5rem; min-height: 2.6em; }
+.product-price { font-size: 1.2rem; font-weight: bold; color: var(--secondary-color); margin-bottom: 0.8rem; }
+.product-description { font-size: 0.9rem; color: #666; margin-bottom: 1.5rem; flex-grow: 1; }
+.add-to-cart-btn { width: 100%; padding: 0.8rem 1rem; }
+
+
+/* Sección de Origen/Impacto Lista */
+#origen ul li, #impacto ul li { background-color: var(--light-color); padding: 20px 25px; margin-bottom: 15px; border-left: 7px solid var(--secondary-color); box-shadow: 0 4px 10px rgba(0,0,0,0.06); font-size: 1.05rem; border-radius: 0 8px 8px 0; }
 #origen ul li strong, #impacto ul li strong { color: var(--secondary-color); font-weight: 600; }
 
 /* Formulario y Detalles de Contacto */
@@ -121,33 +134,39 @@ footer p { font-size: 0.9rem; }
 .whatsapp-float:hover { transform: scale(1.12); box-shadow: 3px 3px 12px rgba(0,0,0,0.4); }
 
 /* Media Queries para Responsividad */
-@media (max-width: 992px) { /* Tabletas y móviles grandes */
+@media (max-width: 992px) {
     body { font-size: 15px; }
     h1 { font-size: 2.6rem; }
     h2 { font-size: 2.1rem; }
     h3 { font-size: 1.5rem; }
     .hero-content h1 { font-size: 3rem; }
     .hero-content p { font-size: 1.2rem; }
-    .dual-layout { flex-direction: column; gap: 30px; text-align: center; /* Centrar texto en layout dual apilado */}
+    .dual-layout { flex-direction: column; gap: 30px; text-align: center; }
     .dual-layout > div { width: 100%; }
-    .dual-layout img { margin-left: auto; margin-right: auto; } /* Centrar imagen en layout dual apilado */
+    .dual-layout img { margin-left: auto; margin-right: auto; }
     .card { max-width: 480px; margin-left:auto; margin-right:auto; }
     header .logo-link #logo-empresa { max-height: 45px; }
     header nav ul.nav-menu li { margin-left: 20px; }
     .contact-main-area { flex-direction: column; }
+    .header-cart-icon { margin-right: 10px; /* Espacio para que no se pegue al borde con el menú hamburguesa */ }
 }
 
-@media (max-width: 768px) { /* Móviles */
+@media (max-width: 768px) {
     body { font-size: 14px; }
     h1 { font-size: 2.2rem; }
     h2 { font-size: 1.9rem; }
     h3 { font-size: 1.4rem; }
+    header .container { position: relative; /* Para posicionar elementos del header en móvil */ }
     header nav ul.nav-menu { flex-direction: column; position: absolute; top: var(--header-height); left: 0; width: 100%; background-color: rgba(255, 255, 255, 0.99); box-shadow: 0 4px 10px rgba(0,0,0,0.1); display: none; padding: 15px 0; border-top: 1px solid #eee; }
     header nav ul.nav-menu.active { display: flex; }
     header nav ul.nav-menu li { margin: 0; width: 100%; }
     header nav ul.nav-menu li a { display: block; padding: 14px 20px; text-align: center; border-bottom: 1px solid #f0f0f0; line-height: normal; }
     header nav ul.nav-menu li:last-child a { border-bottom: none; }
-    .menu-toggle { display: block; }
+    .menu-toggle { display: block; order: 3; /* Para que el menú hamburguesa quede a la derecha */ }
+    .header-cart-icon { order: 2; /* Para que el carrito quede antes del menú hamburguesa */ margin-left: auto; /* Empujar a la derecha del logo */ margin-right: 10px; /* Espacio antes del menú hamburguesa */ }
+    header .logo-link { order: 1; margin-right: auto; /* Asegurar que el logo esté a la izquierda */ }
+
+
     .hero-section { height: auto; min-height: 80vh; padding: 60px 15px; }
     .hero-content h1 { font-size: 2.5rem; }
     .hero-content p { font-size: 1.1rem; }
@@ -157,6 +176,9 @@ footer p { font-size: 0.9rem; }
     .card { min-width: calc(100% - 40px); max-width: calc(100% - 40px); padding: 25px; margin-left:20px; margin-right:20px; box-sizing: border-box;}
     .card img.card-img-top { height: 180px; }
     .card h3 { font-size: 1.6rem; }
+    .product-grid { grid-template-columns: 1fr; }
+    .product-card { max-width: 100%; margin-left:0; margin-right:0; }
+    .product-card h3 { min-height: auto; }
     .contact-form { padding: 25px 20px; }
     .contact-details p { font-size: 1rem; }
     #origen ul li, #impacto ul li { padding: 15px 20px; font-size: 1rem; }
